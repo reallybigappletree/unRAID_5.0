@@ -29,49 +29,85 @@ rm -f /tmp/plugin-prepare
 </INLINE>
 </FILE>
 
-<FILE Name="/boot/packages/boost-1.45.0-i486-1.txz" Run="upgradepkg --install-new">
-<URL>http://slackware.cs.utah.edu/pub/slackware/slackware-13.37/slackware/l/boost-1.45.0-i486-1.txz</URL>
-<MD5>05da48e6a1e353fd1665019a90a89618</MD5>
+<FILE Name="/boot/packages/deluge-1.3.5-i486-1ponce.txz" Run="upgradepkg --install-new">
+<URL>http://ponce.cc/slackware/slackware-14.0/packages/deluge-1.3.5-i486-1ponce.txz</URL>
+<MD5>fabedc373a8623c10ebbcacfe4413b3d</MD5>
 </FILE>
-<FILE Name="/boot/packages/deluge-1.3.3-i486-1ponce.txz" Run="upgradepkg --install-new">
-<URL>http://ponce.cc/slackware/slackware-13.37/packages/deluge-1.3.3-i486-1ponce.txz</URL>
-<MD5>05187a7d5243c2984b0695730f932fb7</MD5>
+<FILE Name="/boot/packages/python-2.7.3-i686-5PTr.txz" Run="upgradepkg --install-new">
+<URL>--no-check-certificate https://dl.dumptruck.goldenfrog.com/p/Vq3zpArAKB/python-2.7.3-i686-5PTr.txz?dl=1</URL>
+<MD5>644b5f3f14e76aaa5b43f01a50d8defa</MD5>
 </FILE>
-<FILE Name="/boot/packages/GeoIP-1.4.8-i486-1ponce.txz" Run="upgradepkg --install-new">
-<URL>http://ponce.cc/slackware/slackware-13.37/packages/GeoIP-1.4.8-i486-1ponce.txz</URL>
-<MD5>b45d0b10f37fa639be29ea20451e2c8f</MD5>
+<FILE Name="/boot/packages/python-twisted-12.1.0-i486-1ponce.txz" Run="upgradepkg --install-new">
+<URL>http://ponce.cc/slackware/slackware-14.0/packages/python-twisted-12.1.0-i486-1ponce.txz</URL>
+<MD5>c5c0e2253a779c628f8d69cd77e30d88</MD5>
 </FILE>
-<FILE Name="/boot/packages/libtorrent-rasterbar-0.15.9-i486-1ponce.txz" Run="upgradepkg --install-new">
-<URL>http://ponce.cc/slackware/slackware-13.37/packages/libtorrent-rasterbar-0.15.9-i486-1ponce.txz</URL>
-<MD5>4a983f3cf5deb36749e8612fad99eb31</MD5>
+<FILE Name="/boot/packages/pyOpenSSL-0.13-i486-1ponce.txz" Run="upgradepkg --install-new">
+<URL>http://ponce.cc/slackware/slackware-14.0/packages/pyOpenSSL-0.13-i486-1ponce.txz</URL>
+<MD5>f12cd3d535f40b2aff617ea9965e92aa</MD5>
 </FILE>
-<FILE Name="/boot/packages/Mako-0.5.0-i486-1ponce.txz" Run="upgradepkg --install-new">
-<URL>http://ponce.cc/slackware/slackware-13.37/packages/Mako-0.5.0-i486-1ponce.txz</URL>
-<MD5>60291401318d42176ff509bb8ca3f6b1</MD5>
+<FILE Name="/boot/packages/pysetuptools-2.1-i486-1_microlinux" Run="upgradepkg --install-new">
+<URL>http://www.microlinux.fr/slackware/MLES-14.0-32bit/slackware/l/pysetuptools-2.1-i486-1_microlinux.txz</URL>
+<MD5>4fb2a255eda28d3682c12f0acf8b80a0</MD5>
 </FILE>
-<FILE Name="/boot/packages/pyOpenSSL-0.12-i486-1ponce.txz" Run="upgradepkg --install-new">
-<URL>http://ponce.cc/slackware/slackware-13.37/packages/pyOpenSSL-0.12-i486-1ponce.txz</URL>
-<MD5>11d97f48e14710f164c9f8dee2d5e176</MD5>
+<FILE Name="/boot/packages/locale-gettext-1.05-i486-3ponce.txz" Run="upgradepkg --install-new">
+<URL>http://ponce.cc/slackware/slackware-14.0/packages/locale-gettext-1.05-i486-3ponce.txz</URL>
+<MD5>d769a09dc1b8092b668d35f95b07e35c</MD5>
 </FILE>
-<FILE Name="/boot/packages/pysetuptools-0.6c11-i486-1ponce.txz" Run="upgradepkg --install-new">
-<URL>http://ponce.cc/slackware/slackware-13.37/packages/pysetuptools-0.6c11-i486-1ponce.txz</URL>
-<MD5>d4305d772642457959d44869590c179e</MD5>
-</FILE>
-<FILE Name="/boot/packages/python2-chardet-2.0.1-i486-1ponce.txz" Run="upgradepkg --install-new">
-<URL>http://ponce.cc/slackware/slackware-13.37/packages/python2-chardet-2.0.1-i486-1ponce.txz</URL>
-<MD5>ef8828b433b458a51f59d4d7c9acca8c</MD5>
-</FILE>
-<FILE Name="/boot/packages/python-twisted-11.0.0-i486-1ponce.txz" Run="upgradepkg --install-new">
-<URL>http://ponce.cc/slackware/slackware-13.37/packages/python-twisted-11.0.0-i486-1ponce.txz</URL>
-<MD5>ee795418c16534a445db02b438fe5f05</MD5>
+<FILE Name="/boot/packages/intltool-0.50.2-i486-1.txz" Run="upgradepkg --install-new">
+<URL>http://slackware.cs.utah.edu/pub/slackware/slackware-14.0/slackware/d/intltool-0.50.2-i486-1.txz</URL>
+<MD5>12f79fd3409bc48e0cf003e212309b54</MD5>
 </FILE>
 <FILE Name="/boot/packages/pyxdg-0.18-i486-1ponce.txz" Run="upgradepkg --install-new">
-<URL>http://ponce.cc/slackware/slackware-13.37/packages/pyxdg-0.18-i486-1ponce.txz</URL>
-<MD5>285860deace2adbee2862ee977dc9a0b</MD5>
+<URL>http://ponce.cc/slackware/slackware-14.0/packages/pyxdg-0.18-i486-1ponce.txz</URL>
+<MD5>295fec328f81b99b46e3846fc92d4101</MD5>
 </FILE>
-<FILE Name="/boot/packages/zope.interface-3.8.0-i486-1ponce.txz" Run="upgradepkg --install-new">
-<URL>http://ponce.cc/slackware/slackware-13.37/packages/zope.interface-3.8.0-i486-1ponce.txz</URL>
-<MD5>24745ade598ab1218050e1b8841db5ca</MD5>
+<FILE Name="/boot/packages/python2-chardet-2.0.1-i486-1ponce.txz" Run="upgradepkg --install-new">
+<URL>http://ponce.cc/slackware/slackware-14.0/packages/python2-chardet-2.0.1-i486-1ponce.txz</URL>
+<MD5>c5b219ade5924bbb1a96cfcda8ed4a2d</MD5>
+</FILE>
+<FILE Name="/boot/packages/libtorrent-rasterbar-0.16.3-i486-1ponce.txz" Run="upgradepkg --install-new">
+<URL>http://ponce.cc/slackware/slackware-14.0/packages/libtorrent-rasterbar-0.16.3-i486-1ponce.txz</URL>
+<MD5>9a2992cf194179d1fe8d3a91b0590dcb</MD5>
+</FILE>
+<FILE Name="/boot/packages/pygtk-2.24.0-i486-1.txz" Run="upgradepkg --install-new">
+<URL>http://slackware.cs.utah.edu/pub/slackware/slackware-14.0/slackware/l/pygtk-2.24.0-i486-1.txz</URL>
+<MD5>55dfc0e4e5dfb7ffcf723d123efc3c63</MD5>
+</FILE>
+<FILE Name="/boot/packages/librsvg-2.36.1-i486-1.txz" Run="upgradepkg --install-new">
+<URL>http://slackware.cs.utah.edu/pub/slackware/slackware-14.0/slackware/l/librsvg-2.36.1-i486-1.txz</URL>
+<MD5>2b000324b36e8f11addff2510be3aec7</MD5>
+</FILE>
+<FILE Name="/boot/packages/xdg-utils-1.1.0rc1-noarch-1dj.txz" Run="upgradepkg --install-new">
+<URL>http://download.salixos.org/i486/14.0/salix/x/xdg-utils-1.1.0rc1-noarch-1dj.txz</URL>
+<MD5>5f33b45d6b6dee0eef2862a987a6b6f3</MD5>
+</FILE>
+<FILE Name="/boot/packages/Mako-0.6.2-i486-1ponce.txz" Run="upgradepkg --install-new">
+<URL>http://ponce.cc/slackware/slackware-14.0/packages/Mako-0.6.2-i486-1ponce.txz</URL>
+<MD5>148ec96b13743c09d0a2fe3bb4a122ee</MD5>
+</FILE>
+<FILE Name="/boot/packages/zlib-1.2.7-i686-2PTr.txz" Run="upgradepkg --install-new">
+<URL>--no-check-certificate https://dl.dumptruck.goldenfrog.com/p/Vq3zpArAKB/zlib-1.2.7-i686-2PTr.txz?dl=1</URL>
+<MD5>e68aca878cb2c95af873e7ae4c231d45</MD5>
+</FILE>
+<FILE Name="/boot/packages/GeoIP-1.4.8-i486-1ponce.txz" Run="upgradepkg --install-new">
+<URL>http://ponce.cc/slackware/slackware-14.0/packages/GeoIP-1.4.8-i486-1ponce.txz</URL>
+<MD5>457afdbed2049282785ca63ef5fdbc16</MD5>
+</FILE>
+<FILE Name="/boot/packages/boost-1.53.0-i486-1gds.txz" Run="upgradepkg --install-new">
+<URL>http://slackpack.ludost.net/packages/slackware-14.0/boost-1.53.0-i486-1gds.txz</URL>
+<MD5>fc0943e4c24cb0ecccf2b5466e907f0d</MD5>
+</FILE>
+<FILE Name="/boot/packages/notify-python-0.1.1-i486-3.txz" Run="upgradepkg --install-new">
+<URL>http://slackware.cs.utah.edu/pub/slackware/slackware-14.0/slackware/l/notify-python-0.1.1-i486-3.txz</URL>
+<MD5>52ed47c0f2cea03050d024783adff0d5</MD5>
+</FILE>
+<FILE Name="/boot/packages/pygame-1.9.1-i486-3gv.txz" Run="upgradepkg --install-new">
+<URL>http://download.salixos.org/i486/14.0/salix/d/pygame-1.9.1-i486-3gv.txz</URL>
+<MD5>dedc4cc04ef2252fda0082ee90a97052</MD5>
+</FILE>
+<FILE Name="/boot/packages/zope.interface-4.0.4-i486-1ponce.txz" Run="upgradepkg --install-new">
+<URL>http://ponce.cc/slackware/slackware-14.0/packages/zope.interface-4.0.4-i486-1ponce.txz</URL>
+<MD5>10333b4c603a26d9c9f4034669b9adf7</MD5>
 </FILE>
 
 <!-- clean up previous install -->
