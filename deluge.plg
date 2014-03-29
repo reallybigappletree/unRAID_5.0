@@ -49,7 +49,7 @@ rm -f /tmp/plugin-prepare
 <URL>http://carroll.cac.psu.edu/pub/linux/distributions/slackware/slackware-14.0/patches/packages/openssl-1.0.1f-i486-1_slack14.0.txz</URL>
 <MD5>677d7a6f86c4ae1ba507de9e9efba2f0</MD5>
 </FILE>
-<FILE Name="/boot/packages/pysetuptools-2.1-i486-1_microlinux" Run="upgradepkg --install-new">
+<FILE Name="/boot/packages/pysetuptools-2.1-i486-1_microlinux.txz" Run="upgradepkg --install-new">
 <URL>http://www.microlinux.fr/slackware/MLES-14.0-32bit/slackware/l/pysetuptools-2.1-i486-1_microlinux.txz</URL>
 <MD5>4fb2a255eda28d3682c12f0acf8b80a0</MD5>
 </FILE>
