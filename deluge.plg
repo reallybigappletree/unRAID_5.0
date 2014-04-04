@@ -130,7 +130,7 @@ rm /tmp/deluge-cleanup
 <FILE Name="/boot/config/plugins/deluge/plgver.txt">
 <INLINE>
 <![CDATA[
-1.1
+1.0
 ]]>
 </INLINE>
 </FILE>
@@ -198,7 +198,7 @@ deluge_start()
 	nohup su - $RUNAS -c "export PYTHON_EGG_CACHE=$DATADIR/tmp && /usr/bin/deluge-web --config=$DATADIR --port=$PORT --fork" > /dev/null 2>&1 &
 
 	echo "... Refresh Web Page"
-	
+
 }
 
 deluge_stop()
@@ -265,7 +265,7 @@ deluge_change_settings()
 {
 	PORT="$2"
 	DATADIR="$3"
-	
+
 	if [ $DATADIR == "" ]; then
 		$DATADIR="/usr/local/deluge"
 	fi
@@ -273,12 +273,12 @@ deluge_change_settings()
 	if [ $RUNAS != $1 ]; then
 		chown -R $1:users "$DATADIR"
 	fi
-	
+
 	RUNAS="$1"
-	
+
 	PLG_STORAGESIZE="$4"
 	PLG_DATACHECK="$5"
-	
+
 }
 
 deluge_enable()
@@ -310,12 +310,12 @@ deluge_disable()
 deluge_install()
 {
 	echo "Installing latest version of Deluge BitTorrent Client..."
-	
+
 	if [ ! -e "$DATADIR" ]; then 
 		mkdir -p $DATADIR
 		mkdir -p $DATADIR/tmp
 	fi
-	
+
 	chown -R $RUNAS:users "$DATADIR" 
 	sleep 3
 	echo "... OK"
@@ -330,13 +330,13 @@ deluge_storagesize()
 		elif [ -f $1 ]; then
 			INST=`ls -lah $1 | awk '{ print $5}'`
 		fi
-	
+
 		if [ -d $2 ]; then
 			DAT=`du -sh $2 | cut -f1`
 		elif [ -f $2 ]; then
 			DAT=`ls -lah $2 | awk '{ print $5}'`
 		fi
-		
+
 		if [ $1 == $2 ]; then
 			echo "<p style="margin-left:10px\;">Storage memory usage: install + data directory: <b>$INST</b></p>"
 		else
@@ -408,7 +408,7 @@ deluge_newver()
 	source /boot/config/plugins/deluge/deluge.cfg
 	echo ""
 }
-	
+
 
 # read our configuration
 source /boot/config/plugins/deluge/deluge.cfg
@@ -481,15 +481,15 @@ Title="Deluge"
 </FILE>
 
 <FILE Name="/usr/local/emhttp/plugins/deluge/device_status.png">
-<LOCAL>/boot/config/plugins/images/device_status.png</LOCAL>
+<URL>--no-check-certificate https://github.com/dmacias72/unRAID_6.0/raw/master/device_status.png</URL>
 </FILE>
 
 <FILE Name="/usr/local/emhttp/plugins/deluge/new_config.png">
-<LOCAL>/boot/config/plugins/images/new_config.png</LOCAL>
+<URL>--no-check-certificate https://github.com/dmacias72/unRAID_6.0/raw/master/new_config.png</URL>
 </FILE>
 
 <FILE Name="/usr/local/emhttp/plugins/deluge/information.png">
-<LOCAL>/boot/config/plugins/images/information.png</LOCAL>
+<URL>--no-check-certificate https://github.com/dmacias72/unRAID_6.0/raw/master/information.png</URL>
 </FILE>
 
 <FILE Name="/usr/local/emhttp/plugins/deluge/deluge.php">
@@ -582,7 +582,6 @@ if ($deluge_installed=="yes")
 		</div>
 	<?endif;?><br/>
 	<? if ($deluge_installed=="yes"): ?>	
-		<center><hr size="3" width="50%" color="grey"></center>
 		<? if ($deluge_cfg[PLG_STORAGESIZE]=="yes"): ?>
 			<?=$deluge_datasize?>
 		<? endif; ?>
@@ -608,6 +607,7 @@ if ($deluge_installed=="yes")
 					</select>
 				</td>
 			</tr>
+
 			<tr>
 				<td>Data Directory:</td>
 				<td><input type="text" name="arg4" maxlength="60" value="<?=$deluge_cfg['DATADIR'];?>"></td>
@@ -657,7 +657,7 @@ if ($deluge_installed=="yes")
 			<button type="button" style="margin-bottom:35px" onClick="done();">Done</button>
 		</div>
 	</form>
-	<br />
+	<br/>
 </div>
 
       </table>
