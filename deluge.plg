@@ -354,11 +354,11 @@ deluge_updateplg()
 	if [ -f deluge.plg ]; then
 	mv deluge.plg deluge.plg.old
 	echo "Updating plugin"
-	wget -q --no-check-certificate https://github.com/dmacias72/unRAID_6.0/raw/master/deluge.plg
+	wget -q --no-check-certificate https://github.com/reallybigappletree/unRAID_5.0/raw/master/deluge.plg
 	/usr/local/sbin/installplg /boot/config/plugins/deluge.plg
 	else
 	echo "Updating plugin"
-	wget -q --no-check-certificate https://github.com/dmacias72/unRAID_6.0/raw/master/deluge.plg
+	wget -q --no-check-certificate https://github.com/reallybigappletree/unRAID_5.0/raw/master/deluge.plg
 	/usr/local/sbin/installplg /boot/config/plugins/deluge.plg
 	fi
 }
@@ -445,7 +445,7 @@ esac
 Menu="NetworkServices"
 Icon="deluge.png"
 Version="1.1"
-Author="dmacias"
+Author="CODE: dmacias72 | PACKAGES: archedraft"
 Type="php"
 Title="Deluge"
 ]]>
