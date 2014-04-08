@@ -106,7 +106,7 @@ rm /tmp/deluge-cleanup
 <FILE Name="/boot/config/plugins/deluge/plgver.txt">
 <INLINE>
 <![CDATA[
-1.4
+0.9
 ]]>
 </INLINE>
 </FILE>
@@ -752,7 +752,7 @@ if [ ! -e /var/run/deluged ]; then
 	chown $RUNAS:users /var/run/deluged
 	chmod 0777 /var/run/deluged
 fi
-for file in /usr/lib64/python2.7/site-packages/deluge/plugins/*.egg
+for file in /usr/lib/python2.7/site-packages/deluge/plugins/*.egg
 do
    if [ ! -d "$file" ]; then
       mv "${file}" "${file}.zip"
