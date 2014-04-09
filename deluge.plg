@@ -106,7 +106,7 @@ rm /tmp/deluge-cleanup
 <FILE Name="/boot/config/plugins/deluge/plgver.txt">
 <INLINE>
 <![CDATA[
-0.9
+0.91
 ]]>
 </INLINE>
 </FILE>
@@ -756,7 +756,7 @@ for file in /usr/lib/python2.7/site-packages/deluge/plugins/*.egg
 do
    if [ ! -d "$file" ]; then
       mv "${file}" "${file}.zip"
-      unzip "${file}.zip" -d "${file}"
+      gunzip "${file}.zip" -d "${file}"
       rm "${file}.zip"
    fi
 done
