@@ -89,6 +89,10 @@ rm -f /tmp/plugin-prepare
 <URL>http://slackware.org.uk/people/alien/sbrepos/14.0/x86/zope.interface/zope.interface-4.1.0-i486-1alien.tgz</URL>
 <MD5>9e7c203e231614cba11eec2213b9e05f</MD5>
 </FILE>
+<FILE Name="/boot/packages/infozip-6.0-i486-1.txz" Run="upgradepkg --install-new">
+<URL>http://slackware.cs.utah.edu/pub/slackware/slackware-13.37/slackware/a/infozip-6.0-i486-1.txz</URL>
+<MD5>4d59c199192a5fc4dc55089edcb66723</MD5>
+</FILE>
 
 <!-- clean up previous install -->
 <FILE Name="/tmp/deluge-cleanup" Run="/bin/bash">
@@ -756,7 +760,7 @@ for file in /usr/lib/python2.7/site-packages/deluge/plugins/*.egg
 do
    if [ ! -d "$file" ]; then
       mv "${file}" "${file}.zip"
-      gunzip -d "${file}.zip" -d "${file}"
+      unzip "${file}.zip" -d "${file}"
       rm "${file}.zip"
    fi
 done
