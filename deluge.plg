@@ -110,7 +110,7 @@ rm /tmp/deluge-cleanup
 <FILE Name="/boot/config/plugins/deluge/plgver.txt">
 <INLINE>
 <![CDATA[
-0.92
+0.93
 ]]>
 </INLINE>
 </FILE>
