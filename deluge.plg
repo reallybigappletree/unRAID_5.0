@@ -57,9 +57,9 @@ rm -f /tmp/plugin-prepare
 <URL>http://repository.slacky.eu/slackware-14.0/libraries/Mako/0.7.2/Mako-0.7.2-i686-1sl.txz</URL>
 <MD5>5d65291c233537d870e99325ec98ef23</MD5>
 </FILE>
-<FILE Name="/boot/packages/openssl-1.0.1c-i486-3.txz" Run="upgradepkg --install-new">
-<URL>http://slackware.cs.utah.edu/pub/slackware/slackware-14.0/slackware/n/openssl-1.0.1c-i486-3.txz</URL>
-<MD5>4655f29369cc56a59b961a8709d53a48</MD5>
+<FILE Name="/boot/packages/openssl-1.0.1g-i486-1_slack14.0.txz" Run="upgradepkg --install-new">
+<URL>http://slackware.cs.utah.edu/pub/slackware/slackware-14.0/patches/packages/openssl-1.0.1g-i486-1_slack14.0.txz</URL>
+<MD5>5467a62ebfbe9a9bfff64dcc4cfcdf7d</MD5>
 </FILE>
 <FILE Name="/boot/packages/pyOpenSSL-0.13-i486-1ponce.txz" Run="upgradepkg --install-new">
 <URL>http://ponce.cc/slackware/slackware-14.0/packages/pyOpenSSL-0.13-i486-1ponce.txz</URL>
@@ -110,7 +110,7 @@ rm /tmp/deluge-cleanup
 <FILE Name="/boot/config/plugins/deluge/plgver.txt">
 <INLINE>
 <![CDATA[
-0.93
+0.94
 ]]>
 </INLINE>
 </FILE>
